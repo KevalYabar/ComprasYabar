@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>conversa con nosotros</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilos4.css">
+    <title>Contacto</title>
+</head>
+<body id="grid">
+    <header class="border">
+        <h1>CONTACTO</h1>
+    </header>
+    <main>
+        <form action=" ">
+            <section class="border">
+                <legend> informacion personal</legend>
+                <label for="nombre"> Nombre: </label>
+                <input type="text" name="nombre"><br>
+                <label for="correo"> Email: </label>
+                <input type="email" name="correo"><br>
+                <label for="contraseña"> Password: </label>
+                <input type="password" name="contraseña"><br>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea name="comentarios" cols="45" rows="25"></textarea>
+            </section>
+            <section class="border">
+                <legend>datos generales</legend>
+                <h2>Selecciona</h2>
+                <h3>Genero</h3>
+                <span>no binario</span>
+                <input type="radio" name="sexo" value="no binario" />
+                <span>hombre</span>
+                <input type="radio" name="sexo" value="hombre" />
+                <span>mujer</span>
+                <input type="radio" name="sexo" value="mujer" />
+                <br>
+                <span> Aceptar términos y condiciones</span>
+                <input type="checkbox" name="aceptar" value="1" />
+                <br>
+                <select name="personaje favorito">
+                    <option value="">Personajes</option>
+                    <option value="Morty">Morty</option>
+                    <option value="Rick">Rick</option>
+                    <option value="Summer">Summer</option>
+                </select>
+            </section>
+            <br>
+            <input type="submit" value="Enviar formulario"/>
+            <input type="reset" value="Limpiar formulario"/>
+        </form>
+    </main>
+</body>
+</html>

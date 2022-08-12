@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.border{
+    border: solid 1px;
+    background-color: rgb(27, 185, 122);
+}
+.menu-flex{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#grid {
+    display: grid;
+    grid-template-areas:
+    
+    "cabeza productos productos"
+    "menus productos productos"
+    "menus servicios lateral"
+    "menus pie pie"
+    ;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 2fr 2fr 1fr;
+
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+}
+
+div {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(216, 167, 103);
+}
+.grad-lineal{
+    background-image: linear-gradient(170deg, green 41%, blue 59%);
+}
+.grad-radial {
+    background-image: radial-gradient( rgb(0, 87, 0) 41%, rgb(174, 17, 80) 59%);
+}
+footer{
+    grid-area: pie;
+}
+#productos{
+    grid-area: productos;
+}
+#servicios{
+    grid-area: servicios;
+}
+nav{
+    grid-area: menus;
+}
+aside{
+    grid-area: lateral;
+}
+span{
+    background-color: azure;
+    padding: 10px 25px;
+    margin: 5px;
+    height: 40px;
+    width: 200px;
+}
+span:hover{
+    background-color: aquamarine;
+    border-left: 35px;
+}
+header {
+    background-color: aliceblue;
+    background-image: linear-gradient(315deg, rgb(132, 226, 132), rgb(124, 124, 236));
+}
+.trasicion {
+    transition: width 2s, height 1s;
+}
+.trasicion:hover{
+    width: 100%;
+    background-color: aqua;
+    background-image: linear-gradient(315deg, rgb(132, 226, 132), rgb(124, 124, 236));
+}
+.transformacion {
+    transform: translateX(147px);
+}
+.girar {
+    transform: rotate(189deg);
+    background-image: linear-gradient(115deg, rgb(115, 6, 61), rgb(150, 171, 16));
+}
+.animacion {
+    animation-name: caja;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+    background-image: linear-gradient(46deg, rgb(12, 59, 12), rgbrgb(0, 0, 18))
+}
+.texto {
+    animation-name: texto;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+}
+@keyframes texto{
+    from {
+    transform: translate(500px)
+    }
+    to {
+    transform: translate(0px);
+    }
+}
+@keyframes caja{
+    from {
+ transform: translate(500px)
+}
+    to {
+  transform: translate(0px);
+}
+}
